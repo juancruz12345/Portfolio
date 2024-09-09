@@ -62,10 +62,10 @@ export default function AboutMe(){
    <Col className="secondColumn">
    
    <div className='secondColumnChild'>
-    <Image roundedCircle loading='lazy' className='profileImg' src='public\img-me.jpg' ></Image>
+    <Image roundedCircle loading='lazy' className='profileImg' src='.\img-me.jpg' ></Image>
    <div className='links'>
     
-    <Link className='link' to={'https://github.com/juancruz12345'}><Image  className='githubIcon' loading='lazy' src='public\icons\githubwhite.svg'></Image></Link>
+    <Link className='link' to={'https://github.com/juancruz12345'}><Image  className='githubIcon' loading='lazy' src='.\icons\githubwhite.svg'></Image></Link>
     </div>
    
    </div>
