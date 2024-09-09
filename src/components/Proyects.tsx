@@ -12,11 +12,15 @@ export default function Cards(){
 
             
           <Card className='card'>
+          
                <Card.Img className="cardImg" src='public\proyects\Screenshot 2024-09-09 at 16-42-45 La Jardineta.png' variant='top'></Card.Img>
                <Card.Body className='cardBody'>
                <div className='cardDiv'>
+               
                <Card.Title className="cardTitle">Vivero La Jardineta</Card.Title>
+               
                <Card.Text className="cardText">E-commerce con autentificacion de usuario y Mercado Pago integrado</Card.Text>
+              
                </div>
               <div className='linksDiv'>
               <Link className='link' to={'https://github.com/juancruz12345/Vivero-La-Jardineta'}>
@@ -32,7 +36,9 @@ export default function Cards(){
                    
                    <Image loading='lazy' src='public\icons\react-svgrepo-com.svg'></Image>
                    </Stack>
+                   
                  </Card.Footer>
+                 <Card.Title className="cardTitle">En desarrollo</Card.Title>
              </Card>
              
             
