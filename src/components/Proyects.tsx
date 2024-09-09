@@ -37,7 +37,7 @@ export default function Cards(){
                    <Image loading='lazy' src='public\icons\react-svgrepo-com.svg'></Image>
                    </Stack>
                    
-                 </Card.Footer>
+                 </Card.Footer>  
                  <Card.Title className="cardTitle">En desarrollo</Card.Title>
              </Card>
              
