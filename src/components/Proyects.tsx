@@ -13,7 +13,7 @@ export default function Cards(){
             
           <Card className='card'>
           
-               <Card.Img className="cardImg" src='public\proyects\Screenshot 2024-09-09 at 16-42-45 La Jardineta.png' variant='top'></Card.Img>
+               <Card.Img className="cardImg" src='C:\Users\Instalacion\My project\PROYECTOS\portfolio\portfolio\public\proyects\Screenshot 2024-09-09 at 16-42-45 La Jardineta.png' variant='top'></Card.Img>
                <Card.Body className='cardBody'>
                <div className='cardDiv'>
                
