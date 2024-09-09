@@ -24,9 +24,9 @@ export default function Cards(){
                </div>
               <div className='linksDiv'>
               <Link className='link' to={'https://github.com/juancruz12345/Vivero-La-Jardineta'}>
-                 <Image className='githubIcon' src='public\icons\githubwhite.svg'></Image></Link>
+                 <Image className='githubIcon' src='.\icons\githubwhite.svg'></Image></Link>
                  <Link className='link' to={'https://e-commerce-frontend-ylts.onrender.com/'}>
-                 <Image className='githubIcon' src='public\icons\web-svgrepo-com.svg'></Image></Link>
+                 <Image className='githubIcon' src='.\public\icons\web-svgrepo-com.svg'></Image></Link>
               </div>
                  </Card.Body>
                  <Card.Footer>
