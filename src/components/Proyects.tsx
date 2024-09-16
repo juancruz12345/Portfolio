@@ -13,19 +13,19 @@ export default function Cards(){
             
           <Card className='card'>
           
-               <Card.Img className="cardImg" src='.\proyects\Screenshot 2024-09-09 at 16-42-45 La Jardineta.png' variant='top'></Card.Img>
+               <Card.Img className="cardImg" src='.\proyects\Screenshot 2024-09-16 at 19-06-25 TV Online.png' variant='top'></Card.Img>
                <Card.Body className='cardBody'>
                <div className='cardDiv'>
                
-               <Card.Title className="cardTitle">Vivero La Jardineta</Card.Title>
+               <Card.Title className="cardTitle">Tv Online</Card.Title>
                
-               <Card.Text className="cardText">E-commerce con autentificacion de usuario y Mercado Pago integrado</Card.Text>
+               <Card.Text className="cardText">Web para ver canales de television online</Card.Text>
               
                </div>
               <div className='linksDiv'>
-              <Link className='link' to={'https://github.com/juancruz12345/Vivero-La-Jardineta'}>
+              <Link className='link' to={'https://github.com/juancruz12345/TV-Online'}>
                  <Image className='githubIcon' src='.\icons\githubwhite.svg'></Image></Link>
-                 <Link className='link' to={'https://e-commerce-frontend-ylts.onrender.com/'}>
+                 <Link className='link' to={'https://tv-online-z08i.onrender.com/'}>
                  <Image className='githubIcon' src='.\icons\web-svgrepo-com.svg'></Image></Link>
               </div>
                  </Card.Body>
@@ -38,7 +38,7 @@ export default function Cards(){
                    </Stack>
                    
                  </Card.Footer>  
-                 <Card.Title className="cardTitle">En desarrollo</Card.Title>
+               
              </Card>
              
             
@@ -73,8 +73,7 @@ export default function Cards(){
               <div className='linksDiv'>
               <Link className='link' to={'https://github.com/juancruz12345/TODO-app'}>
                  <Image className='githubIcon' src='.\icons\githubwhite.svg'></Image></Link>
-                 <Link className='link' to={'https://todo-app-eight-flame-60.vercel.app'}>
-                 <Image className='githubIcon' src='.\icons\web-svgrepo-com.svg'></Image></Link>
+                
               </div>
                  </Card.Body>
                  <Card.Footer>
