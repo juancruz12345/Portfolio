@@ -1,5 +1,5 @@
 import { IconMoon } from "@tabler/icons-react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { useContext } from "react";
 import {ThemeContext} from '../context/context.jsx'
 import './Theme.css'

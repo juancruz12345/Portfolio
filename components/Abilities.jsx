@@ -1,6 +1,6 @@
 import { Badge, Accordion, Col } from "react-bootstrap"
 import iconsArray from "../src/iconsArray"
-import { IconPhoto,IconCircleFilled,IconCircle } from "@tabler/icons-react"
+import {IconCircleFilled,IconCircle } from "@tabler/icons-react"
 import './abilities.css'
 
 export default function Abilities(){
