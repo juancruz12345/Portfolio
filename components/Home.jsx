@@ -1,23 +1,30 @@
-import { Button, Container, Row} from 'react-bootstrap'
+import {  Container, Row} from 'react-bootstrap'
 
-
+import Header from './Header'
 import Proyects from './Proyects'
 import AboutMe from './AboutMe'
 import Abilities from './Abilities'
 import Contact from './Contact'
-import Navbar from './Navbar'
+import Footer from './Footer'
+
+
 
 export default function Home(){
   window.scroll(0,0)
+
+  
     return(
         <div>
          
-      <Navbar/>
-      
-      <AboutMe/>
       
     
+      
+    <Header></Header>
     <Container>
+      <Row id='about'>
+          
+      <AboutMe/>
+      </Row>
         <Row className='habilidadesRow' id='abilities' >
           <Abilities/>
         </Row>
@@ -28,7 +35,8 @@ export default function Home(){
           <Contact/>
         </Row>
     </Container>
-    <Button variant='dark' className='btnTop' href='#top'>Volver</Button>
+    
+    <Footer></Footer>
     </div>
     )
 }

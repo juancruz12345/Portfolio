@@ -2,15 +2,27 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+
+import Loading from '../components/Loading.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import Loading from './components/Loading.jsx'
+import { ThemeProvider } from '../context/context.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Suspense fallback={<Loading/>}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Suspense>
-  </React.StrictMode>,
+
+    
+      
+       
+        <ThemeProvider>
+           <BrowserRouter>
+             <Suspense fallback={<Loading></Loading>}>
+          
+                <App />
+             
+             </Suspense>
+           </BrowserRouter>
+        </ThemeProvider>
+       
+     
+
 )

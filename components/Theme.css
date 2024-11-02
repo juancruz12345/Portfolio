@@ -1,0 +1,166 @@
+[data-bs-theme=light]{
+    background: white !important;
+    color: black !important;
+    
+    body{
+        background: white !important;
+        color: black !important;
+    }
+    .nav{
+        background-color: white !important;
+        color: black !important;
+        box-shadow: 0px 3px 4px -4px grey;
+    }
+    .link{
+        color: black !important;
+    }
+    .link-about{
+        text-decoration: none;
+        color: rgb(0, 0, 0) !important;
+      }
+    .link-nav{
+        text-decoration: none;
+        display: flex;
+        margin: 0 auto;
+        color: black !important;
+      }
+    .link-nav:hover{
+        filter: drop-shadow(0px 0px 6px rgb(128, 128, 128));
+      }
+
+    .firstColumn{
+        background: rgb(231, 231, 231) !important;
+       
+    }
+    .icon-about:hover{
+        filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
+      }
+    .secondColumn{
+        background: rgb(231, 231, 231) !important;
+    }
+
+
+
+    .habilidades-col{
+        background: rgb(231, 231, 231) !important;
+    }
+    .certificados-col{
+        background: rgb(231, 231, 231) !important;
+    }
+    .icon-btn:hover{
+    filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
+}
+    
+    /*''''''''''HABILIDADES''''''''''''*/
+    .habilidadesRow h3{
+        border-bottom: 1px solid rgb(187, 187, 187) !important;
+    }
+
+  .icon-nivel{
+        color: rgb(92, 92, 92) !important;
+    }
+  .icon-nivel-filled{
+    color: rgb(92, 92, 92) !important;
+      }
+  .habilidad:hover{
+  
+    .habilidad-nivel{
+      opacity: 1;
+    }
+    #badge{
+      filter: drop-shadow(0px 0px 3px rgb(128, 128, 128));
+    }
+    .icon-nivel{
+        filter: drop-shadow(0px 0px 3px rgb(128, 128, 128));
+    }
+    .icon-nivel-filled{
+        filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
+      }
+    .habilidad{
+      opacity: 0.5;
+    }
+  }
+
+  .icon-photo{
+   
+    color: rgb(0, 0, 0);
+    
+   }
+   .icon-photo:hover{
+    filter: drop-shadow(0px 0px 1px rgb(128, 128, 128));
+   }
+
+
+
+   .cards-div{
+    border-radius: 8px;
+    background: rgb(231, 231, 231) !important;
+   }
+
+   .cards{
+    filter: drop-shadow(0px 0px 1px rgb(128, 128, 128));
+   }
+   .cards-title{
+    border-bottom: 1px solid rgb(187, 187, 187) !important;
+   }
+
+   .githubIcon{
+    color: black !important;
+    border-radius: 99999px;
+    border: 1px solid  rgb(187, 187, 187) !important;
+    box-shadow: 0px 3px 4px -4px grey;
+   }
+   .githubIcon:hover{
+    background: #171717 !important;
+    color: white !important;
+   }
+
+   /*'''''''''CONTACT''''''''*/
+   .contact-form{
+    border-radius: 8px;
+    background: rgb(231, 231, 231) !important;
+   }.contactBtn{
+    color: white !important;
+    background: black !important;
+  }
+  .contactBtn:active{
+    background: rgb(54, 54, 54) !important;
+  }
+
+   footer{
+    padding-top: 10px;
+    box-shadow: 0px -3px 4px -4px grey;
+   }
+}
+
+
+
+[data-bs-theme=dark]{
+    background: black !important;
+    color: white !important;
+    body{
+    background: black !important;
+    color: white;
+    }
+    .nav{
+        background-color: black;
+    }
+
+    
+
+
+    /*''''''''''CONTACT''''''''''''*/
+
+    .githubIcon{
+        color: white !important;
+        border-radius: 99999px;
+        border: 1px solid rgb(80, 80, 80) !important;
+        box-shadow: 0px 3px 4px -4px grey;
+       }
+       .githubIcon:hover{
+        background: white !important;
+        color: black !important;
+       }
+    
+    
+}
