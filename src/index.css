@@ -98,124 +98,12 @@ body{
   color: white !important;
 }
 
-
-/* //////////  PROJECT  CARDS /////////////           */
-.cards{
-  
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.cards-div{
-  background: #171717;
-  border-radius: 8px;
-}
-.cardsRow{
-  
-  border-radius: 8px;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      200px,
-      1fr
-    )
-  );
-  gap: 1.2rem;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  animation: ver linear both;
-  animation-timeline: view();
-  animation-range: entry 20% cover 30%;
- 
+.projects-section{
+  animation: ver linear both;/*ESTA ANIMACION NO ESTA SOPORTADA POR FIREFOX*/
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
 }
 
-.cards-title{
-  
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgb(80, 80, 80);
-    text-align: center;
-    font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-}
-
-.cardBody{
-  display: flex;
-  flex-direction: column;
-  max-height: fit-content;
-}
-.cardTitle{
-  text-align: center;
-  font-weight: bold;
-}
-.cardText{
- text-wrap: wrap;
- max-height: 10vh;
- text-overflow: ellipsis;
- overflow: auto;
-}
-.card{
-  margin: 10px;
-  max-height: max-content;
-  max-width: max-content;
-
-}
-.cardDiv{
-  margin-bottom: 20px;
-  min-height: 20vh;
-}
-.proyectosItem{
-  padding-bottom: 5vh;
-}
-.cardImg{
-  width: 100%;
-  height: auto;
-  opacity: 1;
-}
-
-.div-superior-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:auto;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
- 
-  & img{
-    display: flex;
-    width: 100%;
-    height: 10vh;
-  }
-}
-
-.div-img:hover{
-  .cardImg{
-    opacity: 0.5;
-  }
-  .div-superior-img{
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-
-
-.githubIcon{
-  transition-duration: 200ms;
-  transition-property: all;
-  width: 4vw;
-  height: 4vh;
-  z-index: 0;
-}
-.githubIcon:hover{
-  scale: 1.4;
-  z-index: 1;
-  
-} 
 
 
 footer{

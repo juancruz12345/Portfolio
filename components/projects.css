@@ -1,0 +1,138 @@
+.projects-section {
+    margin-top: 80px;
+    padding: 4rem 0;
+    
+    background-color: #171717;
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+   
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  .tech-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  
+  .tech-badge {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #333 !important;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+  }
+  
+  .tech-badge svg {
+    margin-right: 5px;
+  }
+  
+  .tech-name {
+    display: none;
+  }
+  
+  .tech-badge:hover .tech-name {
+    display: inline;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .card-img-top {
+      height: 150px;
+    }
+  
+    .card-body {
+      padding: 1rem;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .card-text {
+      font-size: 0.85rem;
+    }
+  }
+  
+  

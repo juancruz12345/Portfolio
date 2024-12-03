@@ -25,7 +25,7 @@ export default function Abilities(){
          
           <div key={i} className="habilidad">
             
-           <Badge bg="light" id='badge' className="badge"><span>{icon.name}</span></Badge>
+           <Badge  id='badge' className="badge"><span>{icon.name}</span></Badge>
             <div className="nivel">
               {
                 icon.nivel == 3

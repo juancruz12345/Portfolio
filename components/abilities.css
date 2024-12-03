@@ -63,14 +63,7 @@
     align-items: center;
     
     cursor: pointer;
-    & span{
-      color: black;
-    }
   
-    #badge{
-      background: linear-gradient(white,rgb(199, 199, 199));
-      
-    }
     .nivel{
      margin-top: 5px;
     
