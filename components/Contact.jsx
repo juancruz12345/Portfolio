@@ -14,6 +14,7 @@ export default function Contact(){
     const [validated, setValidate] = useState(false)
     const [show, setShow] = useState(false)
     const [loading, setLoading] = useState(false);  
+    const [msg, setMsg] = useState('')
 
     const handleSubmit = (e) => {
       const form = e.currentTarget
@@ -39,14 +40,16 @@ export default function Contact(){
           })
           .then(
             () => {
-              
+              setMsg('Mensaje enviado correctamente')
               setShow(true)
               form.current.reset()
                 setValidate(false)
                 setLoading(false) 
             },
             (error) => {
-              console.log('FAILED...', error.text)
+              console.log(error)
+              setMsg('Error al enviar el mensaje')
+              setShow(true)
               setLoading(false)
             },
           )
@@ -73,19 +76,19 @@ export default function Contact(){
       {loading && <Spinner animation="border" size="sm" className="ms-2" />}
       </Button>
     </Form>
-      <ToastComponent show={show} setShow={setShow}></ToastComponent>
+      <ToastComponent show={show} setShow={setShow} msg={msg}></ToastComponent>
 </div>
         </div>
 
     )
 }
 
-function ToastComponent({show, setShow}){
+function ToastComponent({show, setShow, msg}){
 
   return(
     <ToastContainer position='bottom-center' style={{ zIndex: 1 }}>
       <Toast onClose={() => setShow(false)} show={show} delay={4000} autohide>
-        <Toast.Body>El mensaje se ha enviado correctamente.</Toast.Body>
+        <Toast.Body>{msg}</Toast.Body>
       </Toast>
     </ToastContainer>
   )

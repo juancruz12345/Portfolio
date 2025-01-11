@@ -6,80 +6,24 @@
         background: white !important;
         color: black !important;
     }
-    .nav{
-        background-color: white !important;
-        color: black !important;
-        box-shadow: 0px 3px 4px -4px grey;
+    .nav-tab .nav-link{
+      text-decoration: none;
+      color: black !important;
     }
-    .link{
-        color: black !important;
+    .nav-tab .nav-link.active{
+      background-color: white !important;
     }
-    .link-about{
-        text-decoration: none;
-        color: rgb(0, 0, 0) !important;
-      }
-    .link-nav{
-        text-decoration: none;
-        display: flex;
-        margin: 0 auto;
-        color: black !important;
-      }
-    .link-nav:hover{
-        filter: drop-shadow(0px 0px 6px rgb(128, 128, 128));
-      }
-
-    .firstColumn{
-        background: #f8f9fa !important;
-       
-    }
+    
     .icon-about:hover{
         filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
       }
-    .secondColumn{
-        background: #f8f9fa !important;
-    }
-
-
-
-    .habilidades-col{
-        background: #f8f9fa !important;
-    }
-    .certificados-col{
-        background: #f8f9fa !important;
-    }
+   
     .icon-btn:hover{
-    filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
-}
+    filter: drop-shadow(0px 0px 1px rgb(128, 128, 128));
+    }
     
-    /*''''''''''HABILIDADES''''''''''''*/
-    .habilidadesRow h3{
-        border-bottom: 1px solid rgb(187, 187, 187) !important;
-    }
+   
 
-  .icon-nivel{
-        color: rgb(92, 92, 92) !important;
-    }
-  .icon-nivel-filled{
-    color: rgb(92, 92, 92) !important;
-      }
-  .habilidad:hover{
-  
-    .habilidad-nivel{
-      opacity: 1;
-    }
-    #badge{
-      filter: drop-shadow(0px 0px 3px rgb(128, 128, 128));
-    }
-    .icon-nivel{
-        filter: drop-shadow(0px 0px 3px rgb(128, 128, 128));
-    }
-    .icon-nivel-filled{
-        filter: drop-shadow(0px 0px 2px rgb(128, 128, 128));
-      }
-    .habilidad{
-      opacity: 0.5;
-    }
-  }
 
   .icon-photo{
    
@@ -90,18 +34,11 @@
     filter: drop-shadow(0px 0px 1px rgb(128, 128, 128));
    }
 
-
-   .projects-section{
-    background: #f8f9fa !important;
-   }
    .section-title{
     color: #333;
    }
    /*'''''''''CONTACT''''''''*/
-   .contact-form{
-    border-radius: 8px;
-    background: #f8f9fa !important;
-   }.contactBtn{
+   .contactBtn{
     color: white !important;
     background: black !important;
   }
@@ -118,16 +55,23 @@
 
 
 [data-bs-theme=dark]{
-    background: black !important;
+  :root {
+    background-color: #171717 !important;
+  }
     color: white !important;
     body{
-    background: black !important;
+      background-color: #171717 !important;
     color: white;
     }
-    .nav{
-        background-color: black;
+    .nav-tab .nav-link{
+      text-decoration: none;
+      color: white !important;
     }
 
+    .icon-btn:hover{
+      filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+      }
+   
     #about-card{
       background: #171717 !important;
     }
@@ -144,10 +88,7 @@
       box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1) !important;
     }
 
-    .project-card:hover {
-      
-      box-shadow: 0 10px 20px rgba(156, 156, 156, 0.1) !important;
-    }
+   
     
 
     /*''''''''''CONTACT''''''''''''*/

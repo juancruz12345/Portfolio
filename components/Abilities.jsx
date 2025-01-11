@@ -1,129 +1,58 @@
-import { Badge, Accordion, Col } from "react-bootstrap"
-import iconsArray from "../src/iconsArray"
-import {IconCircleFilled,IconCircle } from "@tabler/icons-react"
-import './abilities.css'
 
-export default function Abilities(){
+import { Badge, Accordion, Col, Row, Container } from "react-bootstrap";
+import iconsArray from "../src/iconsArray";
+import './abilities.css';
 
-    const {icons} = iconsArray()
+export default function Abilities() {
+  const { icons } = iconsArray();
 
-  
-    return(
-  <div>
-       
-    
-    <div className="habilidades-certificados-div">
+  const skillLevels = {
+    3: { text: "Avanzado", color: "success" },
+    2: { text: "Medio", color: "warning" },
+    1: { text: "Básico", color: "info" }
+  }
+  const imgsCertificates = ['./certificados/1-Introducción a la Programación.jpeg','./certificados/2-Backend 1 Introducción a Java.jpeg','./certificados/1694701532215-05094ac3-28fc-437b-b7d8-54f154d481d3_1.jpg']
 
-
-    <Col className="habilidades-col" md={5} sm={12}>
-    <div className="div-title"><h3>Habilidades aprendidas</h3></div>
-     
-     <div className="habilidades">
-    
-     {
-        icons.map((icon, i)=>(
-         
-          <div key={i} className="habilidad">
-            
-           <Badge  id='badge' className="badge"><span>{icon.name}</span></Badge>
-            <div className="nivel">
-              {
-                icon.nivel == 3
-                ?
-                <div>
-                <div className="icon-nivel-list">
-                  <IconCircleFilled className="icon-nivel"></IconCircleFilled>
-                  <IconCircleFilled className="icon-nivel"></IconCircleFilled>
-                  <IconCircleFilled className="icon-nivel"></IconCircleFilled>
-                 
-                </div>
-                <div className="habilidad-nivel">Avanzado</div>
-                </div>
-                : icon.nivel == 2
-                ? <div >
-                  <div className="icon-nivel-list">
-                  <IconCircleFilled className="icon-nivel"></IconCircleFilled>
-                  <IconCircleFilled className="icon-nivel"></IconCircleFilled>
-                  <IconCircle className="icon-nivel"></IconCircle>
-                  </div>
-                  <div className="habilidad-nivel">Medio</div>
-                </div>
-                : <div >
-                 
-                 <div className="icon-nivel-list">
-                 <IconCircleFilled className="icon-nivel-filled"></IconCircleFilled>
-                  <IconCircle className="icon-nivel"></IconCircle>
-                  <IconCircle className="icon-nivel"></IconCircle>
-                 </div>
-                  
-                  <div className="habilidad-nivel">Básico</div>
-                </div>
-              }
-            </div>
-            
-            
+  return (
+    <Container className="abilities-container">
+      <Row>
+        <Col lg={8} className="skills-col">
+          <h3 className="section-title">Habilidades aprendidas</h3>
+          <div className="skills-grid">
+            {icons.map((icon, i) => (
+              <div key={i} className="skill-card">
+                <img className="skill-icon" src={icon.url} alt={icon.name} />
+                <Badge bg={skillLevels[icon.nivel].color} className="skill-badge">
+                  {icon.name}
+                </Badge>
+                <span className="skill-level">{skillLevels[icon.nivel].text}</span>
+              </div>
+            ))}
           </div>
-        
-        )
-        )
-        
-      }
-     </div>
-    </Col>
-
-     <Col className="certificados-col" md={5} sm={12}>
-      <h3>Certificados</h3>
-      
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Egg Cooperation</Accordion.Header>
-          <Accordion.Body>
-          <div className="certificado">
-       
-       <a href="#imgModal" className="ancord-txt"><div className="icon-photo"> <span>Introducción a la programación</span></div>
-        </a>
-            
-        <div id="imgModal" className="modal">
-            <a href="#abilities" className="close">&times;</a>
-            <img src="./certificados/1-Introducción a la Programación.jpeg" alt="Imagen ampliada"/>
-        </div>
-       </div>
-
-       <div className="certificado">
-       
-       <a href="#imgModal-2" className="ancord-txt"><div className="icon-photo"><span>Introducción a Java</span></div>
-        </a>
-            
-        <div id="imgModal-2" className="modal">
-            <a href="#abilities" className="close">&times;</a>
-            <img src="./certificados/2-Backend 1 Introducción a Java.jpeg" alt="Imagen ampliada"/>
-        </div>
-       </div>
-
-
-       <div className="certificado">
-       
-       <a href="#imgModal-3" className="ancord-txt"><div className="icon-photo"><span>Base de datos + Frontend</span></div>
-        </a>
-            
-        <div id="imgModal-3" className="modal">
-            <a href="#abilities" className="close">&times;</a>
-            <img src="./certificados/1694701532215-05094ac3-28fc-437b-b7d8-54f154d481d3_1.jpg" alt="Imagen ampliada"/>
-        </div>
-       </div>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-      
-     </Col>
-      
-   </div>
-     
-     
-  </div>
-      
-
-
-
-    )
+        </Col>
+        <Col lg={4} className="certificates-col">
+          <h3 className="section-title">Certificados</h3>
+          <Accordion flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Egg Cooperation</Accordion.Header>
+              <Accordion.Body>
+                {['Introducción a la programación', 'Introducción a Java', 'Base de datos + Frontend'].map((cert, index) => (
+                  <div key={index} className="certificate-item">
+                    <a href={`#imgModal-${index + 1}`} className="certificate-link">
+                      <span>{cert}</span>
+                    </a>
+                    <div id={`imgModal-${index + 1}`} className="modal">
+                      <a href="#abilities" className="close">&times;</a>
+                      <img src={imgsCertificates[index]} alt={cert} />
+                    </div>
+                  </div>
+                ))}
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
+

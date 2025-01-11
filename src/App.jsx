@@ -1,5 +1,5 @@
 
-import {lazy, useEffect } from 'react'
+import {lazy } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/Theme.css'
@@ -10,7 +10,7 @@ const Home = lazy(()=> import('../components/Home'))
 
 function App() {
  
-  const {theme,toggleTheme} = useContext(ThemeContext)
+  const {theme} = useContext(ThemeContext)
   const html = document.querySelector('html')
     html.setAttribute('data-bs-theme', theme)
 

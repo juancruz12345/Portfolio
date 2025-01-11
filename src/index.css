@@ -1,59 +1,28 @@
 
 
-:root {
-  background-color: black;
-}
-
-
 body{
-  
   
   font-family:sans-serif;
   width: 90vw;
   margin: 0 auto;
   
 }
+
 .nav{
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  justify-content: center;
-  box-shadow: 0px 3px 4px -4px white;
-  position: sticky;
-  top:0px;
-  z-index: 10;
- 
+  justify-content: end;
 }
-.navbar{
-  margin: 0 auto;
-  display: flex;
-  
-}
-.icon-nav{
-  display: flex;
-  align-items: center;
-  
-}
-
 .icon-btn{
   cursor: pointer;
-}
-.icon-btn:hover{
-  filter: drop-shadow(2px 2px 4px white);
+  margin-top: 20px;
+  display:flex;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
-
-.firstRow h3{
-  font-size: 35px;
-  font-style: italic;
-}
-.firstRow p{
-  padding-top: 20px;
-  font-size: 20px;
-  font-style: italic;
-}
-.firstDiv{
-  animation: fadeIn 1.2s ease-in;
+.nav-tab .nav-link.active{
+  background-color: #171717 !important;
+  
 }
 
 .spinner{
@@ -64,32 +33,6 @@ body{
   align-content: center;
 }
 
-
-.links{
-  display: flex;
-  margin-top: 10px;
-}
-.links img{
-  width: 5vw;
-  height: 5vh;
-}
-
-
-.linksDiv{
-  width: 10vw;
-  margin: 0 auto;
-  display: flex;
-  
-}
-.link-nav{
-  text-decoration: none;
-  display: flex;
-  margin: 0 auto;
-  color: white !important;
-}
-.link-nav:hover{
-  filter: drop-shadow(0px 0px 4px white);
-}
 
 .link{
   text-decoration: none;
