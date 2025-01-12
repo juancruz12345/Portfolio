@@ -18,8 +18,6 @@ const iconMap = {
 export default function Projects() {
   const { projectsArray } = ProyectsArray();
   const [selectedProject, setSelectedProject] = useState(null);
-  const {theme} = useContext(ThemeContext)
-
   const handleViewDetails = (project) => {
     setSelectedProject(project);
   };
@@ -27,12 +25,15 @@ export default function Projects() {
   const handleCloseDetails = () => {
     setSelectedProject(null);
   };
+  
+  const {theme} = useContext(ThemeContext)
+ 
 
   const renderProjectCard = (project) => (
     <Card className="h-100 project-card" onClick={() => handleViewDetails(project)}>
       
       <div className="card-img-wrapper">
-        <Card.Img variant="top" src={project.imagenPortada} alt={project.nombre} />
+        <Card.Img loading='lazy' variant="top" src={project.imagenPortada} alt={project.nombre} />
         <div className="hover-overlay">
         <div className="tech-overlay">
           {project.tecnologiasUsadas.map((tech, i) => (
@@ -53,7 +54,7 @@ export default function Projects() {
       </div>
       <Card.Body className="d-flex flex-column">
         <Card.Title>{project.nombre}</Card.Title>
-        <Card.Text>{project.descripcion}</Card.Text>
+        
        
         <div className="mt-auto d-flex justify-content-between align-items-center">
           <Link to={project.linkGithub} className="btn btn-outline-primary btn-sm" aria-label={`Ver código de ${project.nombre} en GitHub`}>
@@ -73,7 +74,7 @@ export default function Projects() {
     <div className="detailed-project">
       <div className="detailed-card">
         <div className="card-img-wrapper">
-          <img src={project.imagenPortada} alt={project.nombre} className="detailed-img" />
+          <img loading='lazy' src={project.imagenPortada} alt={project.nombre} className="detailed-img" />
           <div className='tech-div'>
             <h4>Tecnologías utilizadas</h4>
           <div className="tech-overlay">
@@ -90,7 +91,7 @@ export default function Projects() {
         </div>
         <div className="detailed-content">
           <h2>{project.nombre}</h2>
-          <p>{project.descripcion}</p>
+          <p>{project?.descripcionAvanzada}</p>
           <div className="detailed-buttons">
             <Link to={project.linkGithub} className="btn btn-outline-primary" aria-label={`Ver código de ${project.nombre} en GitHub`}>
               <IconBrandGithub /> GitHub

@@ -1,26 +1,20 @@
 import {  Container, Row, Tabs, Tab} from 'react-bootstrap'
-
+import { useState } from 'react'
 import Header from './Header'
 import Proyects from './Proyects'
 import AboutMe from './AboutMe'
 import Abilities from './Abilities'
 import Contact from './Contact'
 import Footer from './Footer'
-import { useContext } from "react";
-import {ThemeContext} from '../context/context.jsx'
 import './Theme.css'
 
 
 
 export default function Home(){
-  
-  const {toggleTheme} = useContext(ThemeContext)
 
   
     return(
         <div>
-         
-      
     
       
     <Header></Header> 
@@ -35,9 +29,9 @@ export default function Home(){
          
         <AboutMe/>
       </Tab>
-      <Tab eventKey="proyects" title="Proyectos">
+      <Tab eventKey="proyects" title="Proyectos" >
          
-      <Proyects/>
+      <Proyects />
       </Tab>
       <Tab eventKey="abilities" title="Habilidades">
          

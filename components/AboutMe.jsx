@@ -16,6 +16,7 @@ export default function AboutMe() {
             className="profile-img shadow"
             src="./img-me-Photoroom(1).png"
             alt="Juan Cruz Urban"
+            loading='lazy'
           />
           <h2 className="mt-3 mb-2">Juan Cruz Urban</h2>
           <p className="text-muted">Programador Web Fullstack | Argentina</p>

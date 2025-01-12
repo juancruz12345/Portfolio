@@ -21,7 +21,7 @@ export default function Abilities() {
           <div className="skills-grid">
             {icons.map((icon, i) => (
               <div key={i} className="skill-card">
-                <img className="skill-icon" src={icon.url} alt={icon.name} />
+                <img loading='lazy' className="skill-icon" src={icon.url} alt={icon.name} />
                 <Badge bg={skillLevels[icon.nivel].color} className="skill-badge">
                   {icon.name}
                 </Badge>
@@ -33,7 +33,7 @@ export default function Abilities() {
         <Col lg={4} className="certificates-col">
           <h3 className="section-title">Certificados</h3>
           <Accordion flush>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item  eventKey="0">
               <Accordion.Header>Egg Cooperation</Accordion.Header>
               <Accordion.Body>
                 {['Introducción a la programación', 'Introducción a Java', 'Base de datos + Frontend'].map((cert, index) => (
