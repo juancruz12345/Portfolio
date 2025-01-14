@@ -53,6 +53,8 @@
   font-weight: 600;
 }
 
+
+
 .certificate-item {
   margin-bottom: 1rem;
 }
@@ -112,6 +114,11 @@
   
   .skill-card {
     background-color: var(--bs-gray-800);
+  }
+
+
+  .accordion-button {
+    background-color: var(--bs-gray-800) !important;
   }
  
   .certificate-link {
