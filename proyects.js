@@ -3,22 +3,40 @@ export function ProyectsArray(){
     const projectsArray = [
         {
             nombre: "Federacion de Ajedrez de Olavarría",
-            descripcion: "Página web para la federacion de ajedrez de Olavarría.",
-            descripcionAvanzada:"Desarrollo y despliegue de la API de FAO para el backend utilizando Express. Tambien utilicé Multer y Cloudinary para guardar imagenes y Turso como base de datos. El frontend esta desarrollado con React JS utilizando el API context de React y React-Query para optimizar las llamadas a la base de datos guardando recursos en el cache.El frontend ademas utiliza la API publica de lichess.org para alojar datos sobre partidas. La web muestra la historia de la federacion, noticias, eventos, listado de jugadores con sus datos y torneos de la ciudad.",
-            imagenPortada: "./Screenshot 2025-01-11 at 13-11-24 FAO.png",
+            descripcion: "Página web para la federación de ajedrez de Olavarría.",
+            descripcionAvanzada:"Desarrollo y despliegue de la API de FAO para el backend utilizando Express. Tambien utilicé Multer y Cloudinary para guardar imágenes en al nube en formato webp, BlackBlaze para guardar los PGN de las partidas y Turso como base de datos. El frontend esta desarrollado con React JS utilizando el API context de React y React-Query para optimizar las llamadas a la base de datos guardando recursos en el cache.El frontend además utiliza la API pública de chess-api para la evaluación de las partidas. La web muestra la historia de la federacion, noticias, eventos, listado de jugadores con sus datos y torneos de la ciudad.",
+            imagenPortada: "./Screenshot 2025-02-08 at 14-45-07 Federación de ajedrez Olavarría.png",
             link: 'https://federacionajedrezolavarria.onrender.com/',
             tecnologiasUsadas: ['react', 'javascript', 'bootstrap', 'node'],
             linkGithub: "https://github.com/juancruz12345/fao-frontend"
           },
+          {
+            nombre: "Truco Online",
+            descripcion: "Juego de truco online para jugar contra una IA",
+            descripcionAvanzada:"Juego de truco online para jugar contra una IA. Desarrollado con Javascript, React y React-bootstrap",
+            imagenPortada: "./Screenshot 2025-02-08 at 14-25-08 Truco online.png",
+            link: 'https://truco-online.vercel.app/',
+            tecnologiasUsadas: ['react', 'javascript', 'bootstrap'],
+            linkGithub: "https://github.com/juancruz12345/truco-online"
+          },
         {
           nombre: "PaisajistApp",
           descripcion: "Página web de paisajismo enfocada en jardínes.",
-          descripcionAvanzada:"Aplicacion web de paisajismo enfocada en jardines. La aplicacion permite cargar una imagen de fondo y ofrece un listado de plantas para agregarle. Las plantas tambien estan clasificadas por su nivel de mantenimiento, riego, horas de sol necesarias y ademas permite redimesionar las imágenes. Esta desarrollada con React JS y React Bootstrap. Para la manipulación de imagenes utilicé la Fabric JS en conjunto con el API Canvas de Javascript.",
+          descripcionAvanzada:"Aplicacion web de paisajismo enfocada en jardines. La áplicacion permite cargar una imágen de fondo y ofrece un listado de plantas para agregar al lienzo. Las plantas también están clasificadas por su nivel de mantenimiento, riego, horas de sol necesarias y además permite redimesionar las imágenes. Esta desarrollada con React JS y React Bootstrap. Para la manipulación de imagenes utilicé la Fabric JS en conjunto con el API Canvas de Javascript.",
           imagenPortada: "./Screenshot 2024-10-23 at 18-51-22 PaisajistApp.png",
           link: 'https://paisajist-app.vercel.app/',
           tecnologiasUsadas: ['react', 'javascript', 'bootstrap'],
           linkGithub: "https://github.com/juancruz12345/PaisajistApp"
         },
+        {
+          nombre: "Clothes",
+          descripcion: "Template de e-commerce propio",
+          descripcionAvanzada:"E-commerce con funcion de carrito desarrollado con React, bootstrap y javascript.",
+          imagenPortada: "./Screenshot 2025-02-04 at 11-03-13 Clothes.png",
+          tecnologiasUsadas: ['react', 'javascript', 'bootstrap'],
+          linkGithub: "https://github.com/juancruz12345/E-commerce"
+        },
+        
         {
           nombre: "Tv Online",
           descripcion: "Página web para ver tv online gratis",
